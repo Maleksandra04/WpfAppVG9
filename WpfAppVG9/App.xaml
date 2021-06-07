@@ -1,0 +1,18 @@
+﻿<Application x:Class="WpfAppVG9.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfAppVG9"
+             StartupUri="Avtorizacia.xaml">
+    <Application.Resources>
+        
+
+        <Style TargetType="Grid">
+
+            <Setter Property="Background" Value="LightCoral"></Setter>
+
+        </Style>
+
+        
+            
+    </Application.Resources>
+</Application>
