@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,16 +20,30 @@ namespace WpfAppVG9
     /// </summary>
     public partial class Avtorizacia : Window
     {
+
+       public static ModelDB.Modelremont bd = new ModelDB.Modelremont();
+
         public Avtorizacia()
         {
             InitializeComponent();
+            bd.User.Load();
+            nameUserCB.ItemsSource = bd.User.Local;
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            Spisoktovarov login = new Spisoktovarov();
-            login.Show();
-            this.Close();
+           if (bd.User.Where(x=> x.Users == nameUserCB.Text &&x.Password==passUserPB.Password).FirstOrDefault()!=null)
+            {
+                Spisoktovarov login = new Spisoktovarov();
+                login.Show();
+                this.Close();
+            }
+
+            else
+            {
+                MessageBox.Show("Пользователь с такими данными не найден");
+            }
+           
         }
     }
 }

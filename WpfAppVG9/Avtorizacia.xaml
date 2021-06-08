@@ -33,7 +33,7 @@
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center"  
                        FontSize="30"   ></TextBlock>
-        <ComboBox x:Name="nameUserCB" Grid.Column="1" Grid.Row="1" Margin="12" FontSize="30" ></ComboBox>
+        <ComboBox x:Name="nameUserCB" Grid.Column="1" Grid.Row="1" Margin="12" FontSize="30" DisplayMemberPath="Users" ></ComboBox>
         <PasswordBox x:Name="passUserPB" Grid.Column="1" Grid.Row="2" Margin="12" FontSize="30"></PasswordBox>
 
         <Button x:Name="LoginButton" 

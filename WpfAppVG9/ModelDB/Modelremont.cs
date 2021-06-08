@@ -12,6 +12,7 @@ namespace WpfAppVG9.ModelDB
         {
         }
 
+        public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Компания> Компания { get; set; }
         public virtual DbSet<Покупатель> Покупатель { get; set; }
         public virtual DbSet<Ремонт> Ремонт { get; set; }
@@ -20,6 +21,14 @@ namespace WpfAppVG9.ModelDB
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<User>()
+                .Property(e => e.Users)
+                .IsFixedLength();
+
+            modelBuilder.Entity<User>()
+                .Property(e => e.Password)
+                .IsFixedLength();
+
             modelBuilder.Entity<Компания>()
                 .Property(e => e.Fax)
                 .IsFixedLength();

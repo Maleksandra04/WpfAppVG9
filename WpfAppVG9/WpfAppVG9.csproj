@@ -68,6 +68,7 @@
       <DependentUpon>Dobavlenie.xaml</DependentUpon>
     </Compile>
     <Compile Include="ModelDB\Modelremont.cs" />
+    <Compile Include="ModelDB\User.cs" />
     <Compile Include="ModelDB\Компания.cs" />
     <Compile Include="ModelDB\Покупатель.cs" />
     <Compile Include="ModelDB\Ремонт.cs" />
@@ -137,5 +138,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
