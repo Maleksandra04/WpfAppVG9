@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfAppVG9.ModelDB;
 
 namespace WpfAppVG9
 {
@@ -23,7 +24,15 @@ namespace WpfAppVG9
         public Spisoktovarov()
         {
             InitializeComponent();
+            Avtorizacia.bd.Товар.Load();
+            Tovar.ItemsSource = Avtorizacia.bd.Товар.Local;
+
+            
+
         }
+
+        public static Товар selectEntites = new Товар();
+
 
         private void Tovar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -38,6 +47,9 @@ namespace WpfAppVG9
 
         private void delButton_Click(object sender, RoutedEventArgs e)
         {
+
+            selectEntites = (Товар)Tovar.SelectedItem;
+            
             Ydalit del = new Ydalit();
             del.Show();
             this.Close();
@@ -50,7 +62,9 @@ namespace WpfAppVG9
 
         private void printButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Remont print = new Remont();
+            print.Show();
+            
         }
     }
 }

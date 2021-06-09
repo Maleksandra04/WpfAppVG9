@@ -15,16 +15,16 @@ using System.Windows.Shapes;
 namespace WpfAppVG9
 {
     /// <summary>
-    /// Логика взаимодействия для Otchet.xaml
+    /// Логика взаимодействия для Dobavlenierem.xaml
     /// </summary>
-    public partial class Otchet : Window
+    public partial class Dobavlenierem : Window
     {
-        public Otchet()
+        public Dobavlenierem()
         {
             InitializeComponent();
         }
 
-        private void del2_Click(object sender, RoutedEventArgs e)
+        private void add1_Click(object sender, RoutedEventArgs e)
         {
 
         }

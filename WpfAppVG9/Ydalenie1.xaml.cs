@@ -15,27 +15,27 @@ using System.Windows.Shapes;
 namespace WpfAppVG9
 {
     /// <summary>
-    /// Логика взаимодействия для Ydalit.xaml
+    /// Логика взаимодействия для Ydalenie1.xaml
     /// </summary>
-    public partial class Ydalit : Window
+    public partial class Ydalenie1 : Window
     {
-        public Ydalit()
+        public Ydalenie1()
         {
             InitializeComponent();
         }
 
-        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        private void cancelButton1_Click(object sender, RoutedEventArgs e)
         {
-            Spisoktovarov main = new Spisoktovarov();
+            Remont main = new Remont();
             main.Show();
             this.Close();
         }
 
-        private void delButton_Click(object sender, RoutedEventArgs e)
+        private void delButton1_Click(object sender, RoutedEventArgs e)
         {
-            Avtorizacia.bd.Товар.Remove(Spisoktovarov.selectEntites);
+            Avtorizacia.bd.Ремонт.Remove(Remont.selectEntites);
             Avtorizacia.bd.SaveChanges();
-            Spisoktovarov main = new Spisoktovarov();
+            Remont main = new Remont();
             main.Show();
             this.Close();
         }

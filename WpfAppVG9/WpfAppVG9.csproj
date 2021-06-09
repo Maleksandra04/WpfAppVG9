@@ -67,6 +67,9 @@
     <Compile Include="Dobavlenie.xaml.cs">
       <DependentUpon>Dobavlenie.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Dobavlenierem.xaml.cs">
+      <DependentUpon>Dobavlenierem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ModelDB\Modelremont.cs" />
     <Compile Include="ModelDB\User.cs" />
     <Compile Include="ModelDB\Компания.cs" />
@@ -77,8 +80,14 @@
     <Compile Include="Otchet.xaml.cs">
       <DependentUpon>Otchet.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Remont.xaml.cs">
+      <DependentUpon>Remont.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Spisoktovarov.xaml.cs">
       <DependentUpon>Spisoktovarov.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ydalenie1.xaml.cs">
+      <DependentUpon>Ydalenie1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Ydalit.xaml.cs">
       <DependentUpon>Ydalit.xaml</DependentUpon>
@@ -98,11 +107,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Dobavlenierem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Otchet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Remont.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Spisoktovarov.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Ydalenie1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
