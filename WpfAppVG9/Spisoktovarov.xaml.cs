@@ -21,17 +21,27 @@ namespace WpfAppVG9
     /// </summary>
     public partial class Spisoktovarov : Window
     {
+
+        
         public Spisoktovarov()
         {
             InitializeComponent();
             Avtorizacia.bd.Товар.Load();
             Tovar.ItemsSource = Avtorizacia.bd.Товар.Local;
-
+            Avtorizacia.bd.Ремонт.Load();
+            Tovar.ItemsSource = Avtorizacia.bd.Ремонт.Local;
+            
+            
+            
+            
+            
             
 
         }
 
         public static Товар selectEntites = new Товар();
+        public static Ремонт SelectEnts = new Ремонт();
+        
 
 
         private void Tovar_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -48,7 +58,6 @@ namespace WpfAppVG9
         private void delButton_Click(object sender, RoutedEventArgs e)
         {
 
-            selectEntites = (Товар)Tovar.SelectedItem;
             
             Ydalit del = new Ydalit();
             del.Show();
@@ -62,9 +71,14 @@ namespace WpfAppVG9
 
         private void printButton_Click(object sender, RoutedEventArgs e)
         {
-            Remont print = new Remont();
+            Otchet print = new Otchet ();
             print.Show();
             
+        }
+
+        private void printButton_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
