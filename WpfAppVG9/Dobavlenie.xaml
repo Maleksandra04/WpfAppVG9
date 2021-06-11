@@ -12,7 +12,8 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            
+            <RowDefinition/>
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -26,21 +27,27 @@
                    Grid.Row="0"
                    FontSize="22"/>
 
-        <TextBlock Text="Изготовитель:"
+        <TextBlock Text="Стоимость ремонта:"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    Grid.Column="0"
                    Grid.Row="1"
                    FontSize="22"/>
 
-        <TextBlock Text="Название товара или прибора:"
+        <TextBlock Text="Дата приемки в ремонт:"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
                    Grid.Column="0"
                    Grid.Row="2"
                    FontSize="22"/>
 
-        
+        <TextBlock Text="Дата получения:"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Grid.Column="0"
+                   Grid.Row="3"
+                   FontSize="22"/>
+
 
         <Button x:Name="add" 
                 Grid.Column="1"
@@ -51,8 +58,9 @@
                 Click="add_Click"/>
 
         <TextBox x:Name="kod" Grid.Column="2" Grid.Row="0" Margin="15"></TextBox>
-        <TextBox x:Name="izgotov" Grid.Column="2" Grid.Row="1" Margin="15"></TextBox>
-        <TextBox x:Name="nazvanie" Grid.Column="2" Grid.Row="2" Margin="15"></TextBox>
+        <TextBox x:Name="stoimost" Grid.Column="2" Grid.Row="1" Margin="15"></TextBox>
+        <DatePicker x:Name="priemka" Grid.Column="2" Grid.Row="2" Margin="15"></DatePicker>
+        <DatePicker x:Name="polych" Grid.Column="2" Grid.Row="3" Margin="15"></DatePicker>
         
     </Grid>
 </Window>

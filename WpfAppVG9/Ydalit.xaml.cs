@@ -33,7 +33,9 @@ namespace WpfAppVG9
 
         private void delButton_Click(object sender, RoutedEventArgs e)
         {
-            Avtorizacia.bd.Товар.Remove(Spisoktovarov.selectEntites);
+            
+            
+            Avtorizacia.bd.Ремонт.Remove(Spisoktovarov.SelectEnts);
             Avtorizacia.bd.SaveChanges();
             Spisoktovarov main = new Spisoktovarov();
             main.Show();

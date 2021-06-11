@@ -67,9 +67,6 @@
     <Compile Include="Dobavlenie.xaml.cs">
       <DependentUpon>Dobavlenie.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Dobavlenierem.xaml.cs">
-      <DependentUpon>Dobavlenierem.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ModelDB\Modelremont.cs" />
     <Compile Include="ModelDB\User.cs" />
     <Compile Include="ModelDB\Компания.cs" />
@@ -98,10 +95,6 @@
       <DependentUpon>Avtorizacia.xaml</DependentUpon>
     </Compile>
     <Page Include="Dobavlenie.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Dobavlenierem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

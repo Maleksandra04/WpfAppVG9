@@ -58,7 +58,7 @@ namespace WpfAppVG9
         private void delButton_Click(object sender, RoutedEventArgs e)
         {
 
-            
+            SelectEnts = (Ремонт)Tovar.SelectedItem;
             Ydalit del = new Ydalit();
             del.Show();
             this.Close();
